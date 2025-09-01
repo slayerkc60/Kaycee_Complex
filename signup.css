@@ -1,0 +1,142 @@
+/* Reset + Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+header {
+  background: #111;
+  color: #fff;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #f39c12;
+}
+
+/* Signup Section */
+.signup {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.signup h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.signup p {
+  margin-bottom: 30px;
+  color: #555;
+}
+
+/* Signup Form */
+.signup-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.signup-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signup-form input:focus {
+  border-color: #f39c12;
+  box-shadow: 0 0 6px rgba(243, 156, 18, 0.3);
+  outline: none;
+}
+
+.signup-form button {
+  width: 100%;
+  background: #f39c12;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  /* transition: background 0.3s ease, transform 0.2s ease; */
+}
+
+.signup-form button:hover {
+  background: #d35400;
+  /* transform: translateY(-2px); */
+}
+
+/* Login Link */
+.login-link {
+  margin-top: 20px;
+  color: #555;
+}
+
+.login-link a {
+  color: #f39c12;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #fff;
+  margin-top: 50px;
+  font-size: 0.9rem;
+}

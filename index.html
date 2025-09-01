@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaycee Shoes1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">Kaycee Complex</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="login.html"><button class="btn" style="margin-left: 350px">Sign In</button></a>
+    <a href="signup.html"><button class="btn">Sign Up</button></a>
+    <div style="margin-left:20px;">
+      Cart: <span id="cart-count">0</span>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Shop the Latest Trends</h1>
+    <p>Discover exclusive deals and stylish collections at affordable prices.</p>
+    <a href="shop.html"><button class="btn">Shop Now</button></a>
+  </section>
+
+  <!-- Featured Products from API -->
+  <section class="products">
+    <h2>Featured Products</h2>
+    <div id="featured-products" class="product-grid">
+      <!-- JS product cards here -->
+    </div>
+  </section>
+
+  <!-- Categories Section (still static for now) -->
+  <section class="products" id="categories">
+    <h2>Categories</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="leather shoes.webp" alt="leather">
+        <h3>Leather</h3>
+        <p>Leather shoes</p>
+      </div>
+      <div class="product-card">
+        <img src="men.webp" alt="men">
+        <h3>Men</h3>
+        <p>Sneakers for men</p>
+      </div>
+      <div class="product-card">
+        <img src="women.webp" alt="women">
+        <h3>Women</h3>
+        <p>Sneakers for women</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="cart">
+    Added Succesfully
+  </div>
+  
+
+ 
+  <script src="script.js"></script>
+</body>
+</html>
