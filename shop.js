@@ -17,7 +17,7 @@ function showCartMessage() {
 fetch("https://fakestoreapi.com/products")
   .then(response => response.json())
   .then(products => {
-    
+
     products.forEach(product => {
       
       const card = document.createElement("div");
@@ -36,9 +36,11 @@ fetch("https://fakestoreapi.com/products")
   })
   .catch(error => console.error("Error fetching products:", error));
 
-// Add product to cart
+
 function addToCart(productId) {
-  cart.push(productId); // Add product ID to cart
-  cartCount.textContent = cart.length; // Update cart count in header
-  showCartMessage(); // Show the "Added Successfully" message
+  cart.push(productId); 
+  cartCount.textContent = cart.length; 
+  showCartMessage(); 
 }
+
+ 

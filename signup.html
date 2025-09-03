@@ -24,7 +24,7 @@
     <h1>Create Your Account</h1>
     <p>Signup today and become a big member of this brand</p>
 
-    <form action="#" method="post" class="signup-form">
+    <form id="signupForm" class="signup-form">
       <label for="fullname">Full Name</label>
       <input type="text" id="fullname" name="fullname" required>
 
@@ -45,6 +45,20 @@
     </p>
   </section>
 
+  <script>
+    document.getElementById("signupForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      // Get the name
+      const fullname = document.getElementById("fullname").value;
+
+      // Save name in localStorage
+      localStorage.setItem("username", fullname);
+
+      // Redirect to homepage
+      window.location.href = "index.html";
+    });
+  </script>
 
 </body>
 </html>

@@ -22,7 +22,7 @@
 
   <section class="login">
     <h1>Login</h1>
-    <form action="#" method="post" class="login-form">
+    <form action="#" method="post" class="login-form" id="login-form">
       <label for="email">Email Address</label>
       <input type="email" id="email" name="email" required>
 
@@ -37,6 +37,19 @@
     </p>
   </section>
 
+<script>
 
+      document.getElementById("login-form").addEventListener("submit", function(e) {
+    e.preventDefault(); 
+
+    // Get the email value entered by user
+    const email = document.getElementById("email").value;
+
+    // Save email in localStorage as "username"
+    localStorage.setItem("username", email);
+
+    window.location.href = "index.html";
+    });
+</script>
 </body>
 </html>

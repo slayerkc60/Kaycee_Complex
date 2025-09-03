@@ -6,7 +6,7 @@
   <title>Kaycee Shoes1</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="background-color: aliceblue;">
 
   <header>
     <div class="logo">Kaycee Complex</div>
@@ -18,13 +18,19 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <a href="login.html"><button class="btn" style="margin-left: 350px">Sign In</button></a>
-    <a href="signup.html"><button class="btn">Sign Up</button></a>
+    <a href="login.html"><button class="btn" style="margin-left: 350px" id="loginBtn">Sign In</button></a>
+    <a href="signup.html"><button class="btn" id="signupBtn">Sign Up</button></a>
     <div style="margin-left:20px;">
       Cart: <span id="cart-count">0</span>
     </div>
+       <div id="greeting" class="greeting"></div>
   </header>
 
+  <!-- <main>
+    <h1>Welcome to Kaycee Complex</h1>
+    <p>Browse our products and enjoy shopping.</p>
+  </main>    -->
+  
   <section class="hero">
     <h1>Shop the Latest Trends</h1>
     <p>Discover exclusive deals and stylish collections at affordable prices.</p>
@@ -38,6 +44,10 @@
       <!-- JS product cards here -->
     </div>
   </section>
+
+  <div id="product-details" style="display:none; margin-top:20px; padding:10px; border:1px solid #ccc;">
+  <!-- Product details will be injected here -->
+</div>
 
   <!-- Categories Section (still static for now) -->
   <section class="products" id="categories">
@@ -64,6 +74,8 @@
   <div class="cart">
     Added Succesfully
   </div>
+  
+  <div id="greeting" class="greeting"></div>
   
 
  
