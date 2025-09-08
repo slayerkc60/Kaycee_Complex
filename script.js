@@ -1,7 +1,3 @@
-// ===============================
-// PRODUCT / CART LOGIC (your code)
-// ===============================
-
 const featuredContainer = document.getElementById("featured-products");
 const cartCount = document.getElementById("cart-count");
 const detailsDiv = document.getElementById("product-details"); 
@@ -24,7 +20,7 @@ async function loadFeatured() {
     products.forEach(product => {
       const card = document.createElement('div');
       card.classList.add('product-card');
-      card.innerHTML = `
+      card.innerHTML = ` 
         <img src="${product.image}" alt="${product.title}">
         <h3>${product.title}</h3>
         <p>$${product.price}</p>
@@ -47,7 +43,7 @@ async function loadFeatured() {
   }
 }
 
-// Fetch & show product details
+
 async function showDetails(id) {
   try {
     const res = await fetch(`https://fakestoreapi.com/products/${id}`);
@@ -66,7 +62,6 @@ async function showDetails(id) {
   }
 }
 
-// Load categories
 async function loadCategories() {
   try {
     const categoriesRes = await fetch('https://fakestoreapi.com/products/categories');
@@ -101,16 +96,13 @@ loadFeatured();
 loadCategories();
 
 
-// ===============================
-// LOGIN / SIGNUP / LOGOUT LOGIC
-// ===============================
 document.addEventListener('DOMContentLoaded', () => {
   const greeting = document.getElementById('greeting');
-  const loginLink = document.getElementById('loginBtn');   // make sure these have IDs in your HTML
-  const signupLink = document.getElementById('signupBtn'); // same here
+  const loginLink = document.getElementById('loginBtn'); 
+  const signupLink = document.getElementById('signupBtn'); 
   const header = document.querySelector('header');
 
-  // Check user in localStorage
+  
   const currentUser = localStorage.getItem('currentUser') || localStorage.getItem('username');
 
   if (currentUser) {
@@ -131,14 +123,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
       logoutBtn.addEventListener('click', () => {
         localStorage.removeItem('currentUser');
-        localStorage.removeItem('username'); // optional, to clear both
+        localStorage.removeItem('username'); 
         location.reload();
       });
 
       header.appendChild(logoutBtn);
     }
   } else {
-    // Guest view
+    
     greeting.textContent = 'Welcome, Guest!';
     if (loginLink) loginLink.style.display = '';
     if (signupLink) signupLink.style.display = '';
